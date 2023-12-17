@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+<body>
+      <div class="container">
+        <div id="emi">
+            <div class="top">
+                 <h3>   EMI Calculator:</h3>
+                    <div class="allinput">
+                         <div class="input">
+                             <label for="">Amount:</label>
+                             <input type="number" value="20000"  class="amount">
+                        </div>
+                        <div class="input">
+                              <label for="">Interest Rate:</label>
+                              <input type="number" value="7.5" class="rate">
+                        </div>
+                        <div class="input">
+                              <label for="">Tenure(in months):</label>
+                              <input type="number" value="240" class="tenure">
+                        </div>
+                    </div>
+                    <h4 class="err"></h4>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <ul>
+                        <li>Loan EMI:</li>
+                        <li class="loan"></li>
+                    </ul><hr>
+                    <ul>
+                        <li>Total Interest Payable:</li>
+                        <li class="interest"></li>
+                    </ul><hr>
+                    <ul>
+                        <li>Total Amount:</li>
+                        <li class="total"></li>
+                    </ul><hr>
+                    <button class="submit">submit</button>
+                </div>
+                <div class="right">
+                    <canvas id="loanChart" width="00px" height="100px"></canvas>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>

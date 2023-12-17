@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container 
+{
+    background-color: rgb(1, 57, 57);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3 
+{
+    color: aquamarine;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: oblique;
+}
+#emi 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 50%;
+}
+.top 
+{
+    background-color: #14213d;
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.err
+{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 100;
+}
+.bottom 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: beige;
+    height: 60%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.left
+{
+    height: 200px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+.right 
+{
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle 
+{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 50%;
+}
+.allinput 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7px;
+    margin-top: 10px;
+}
+.input
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(127, 11, 236);
+    font-style: italic;
+    gap: 5px;
+    font-size: 20px;
+}
+input
+{
+    outline: none;
+    border: 2px solid rgb(245, 111, 15);
+    border-radius: 4px;
+    padding:0 5px ;
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: 30px;
+}
+.submit 
+{
+    height: 35px;
+    width: 95%;
+    color: blue;
+    background-color: #14213d;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    border: 3px solid sandybrown;
+}
+ul
+{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #961251;
+}
+.loan,.total,.interest
+{
+    color: blue;
+    font-size: 19px;
+    font-weight: 600;
+}
+@media (max-width:800px)
+{
+    #emi
+    {
+        width: 90%;
+        height: 90vh;
+    }
+    input 
+    {
+        width: 190px;
+        height: 25px;
+    }
+    .input
+    {
+        font-size: 20px;
+    }
+    .allinput
+    {
+        flex-direction: column;
+    }
+    .top
+    {
+        height: 50%;
+    }
+    .bottom
+    {
+        height: 50%;
+    }
+    button 
+    {
+        font-size: 19px;
+        letter-spacing: 2px;
+    }
+    #loanChart
+    {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
